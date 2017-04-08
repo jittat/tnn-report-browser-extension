@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "TNN-report-client",
+  "version": "0.01",
+
+  "description": "Adds a browser action icon on the toolbar to submit incidents to TNN server",
+
+  "icons": {
+    "48": "icons/ext-icon.png"
+  },
+
+  "permissions": [
+    "*://report.secondtrain.org/*",
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/action-icon.png",
+    "default_title": "Report",
+    "default_popup": "popup/index.html"
+  }
+}
